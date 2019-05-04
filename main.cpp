@@ -11,7 +11,7 @@
 #include <cstdio>
 #include <vector>
 #include <algorithm>
-
+#include <unistd.h>
 #include <pthread.h>
 
 #include "vector3.h"
@@ -37,7 +37,7 @@ main(int argc, char *argv[]) {
 
   initObje();
 
-  emitPhotons();
+  //emitPhotons();
   resetRender();
 
   //--  initialize glut (option, pos, size)
